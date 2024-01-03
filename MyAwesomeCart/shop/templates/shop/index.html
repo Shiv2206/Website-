@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="../../static/shop/style.css">
+</head>
+<body>
+
+    <nav class="Navbar">
+        <ul class="uk">
+            <li><a href="ShopHome">Home</a></li>
+            <li><a href="productview">productview</a></li>
+            <li><a href="tracker">Tracker</a></li>
+            <li><a href="checkout">Checkout</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="about">About Us</a></li>
+        </ul>
+ 
+    </nav>
+  
+
+<p >This is a shop</p>
+
+<section class="container">
+    {% for i in Products %}
+    <div class="card">
+        <div class="card-image"></div>
+        <h2>{{i.desc}}</h2>
+        <p>The page "Legins" does not exist. You can create a draft and submit it for review or request that a redirect be created, but consider checking the search results below to see whether the topic is already covered.</p>
+        <a href="">{{i.price}}</a>
+    </div>
+    {% endfor %}
+
+    <div class="card">
+        <div class="card-image"></div>
+        <h2>Legins</h2>
+        <p>The page "Legins" does not exist. You can create a draft and submit it for review or request that a redirect be created, but consider checking the search results below to see whether the topic is already covered.</p>
+        <a href="">Buy</a>
+    </div>
+
+</section>
+
+</body>
+</html>
